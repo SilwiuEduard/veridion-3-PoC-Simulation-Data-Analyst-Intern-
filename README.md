@@ -6,6 +6,7 @@ This repository contains the end-to-end solution for the Veridion Data Enrichmen
 ---
 
 ## 🗂 Repository Structure
+```text
 veridion-data-challenge/
 ├── README.md                  # Executive report and project documentation (this file)
 ├── sql/                       # Production-ready BigQuery(SQL) scripts
@@ -14,9 +15,9 @@ veridion-data-challenge/
 │   └── Veridion_Data_Dictionary+Data_Sample...# Metadata & Data Dictionary
 ├── python/                    # Automation scripts
 │   └── veridion_script.ipynb  # Jupyter Notebook with the cascading scoring script
-└── data/                      # Local data pipeline steps (Sample Test)
-├── docs/                    # 
-│   └── PoC Simulation (Data Analyst Intern).docx  # Veridion Challenge
+├── data/                      # Local data pipeline steps (Sample Test)
+├── docs/                      # Documentation folder
+│   └── PoC Simulation (Data Analyst Intern).docx # Veridion Challenge
 └── data/                      # Local data pipeline steps (Sample Test)
     ├── 1. presales_data_sample.csv
     ├── 2. presales_data_first_cleanUp.xlsx
@@ -24,7 +25,6 @@ veridion-data-challenge/
     ├── 4. client_file_data_match_choosen.csv
     ├── 5. data_to_verify_manually.csv
     └── 6. data_with_no_match_manually.csv
-
 ---
 
 ## 🛠 3. Summary of the work & Thinking Process
