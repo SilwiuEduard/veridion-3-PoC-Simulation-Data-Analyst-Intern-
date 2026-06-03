@@ -1,0 +1,132 @@
+,Data Block,ATTRIBUTE NAME ,ATTRIBUTE COLUMN NAME,ATTRIBUTE DEFINITION,Availability
+,Core,Company ID,company_id,Company internal ID to Veridion,API and Batch
+,Core,Created At,created_at,UTC Date and time when the company profile was initially added to the Veridion database,API and Batch
+,Core,Last Updated At,last_updated_at,UTC Date and time when the information about the company was last extracted and verified for any updates.,API and Batch
+,Company Information - L1,Company Commercial Names,company_commercial_names,"The commercial name by which the company is known. This may or may not be the same as the legal name. For example, a company may be called ""The Acme Inc."", yet it's referred to by its commercial name, ""Acme"".",API and Batch
+,Company Information - L1,Company Name,company_name,"Most commonly used name when referring to this entity. This name can be the legal name, or it can be the commercial name. In some cases, the commercial name is an abbreviation of the company name.",API and Batch
+,Company Information - L1,Company Legal Names,company_legal_names,"The company's legal entity name. This is the name that is used, for example, in the Privacy Policy and other legal documents.",API and Batch
+,Company Information - L1,Company Type,company_type,"""Public"" for companies listed on the stock exchange, ""Non-profit"" for non-profits, ""Private"" for privately held companies",API and Batch
+,Company Information - L1,Extracted Long Description,extracted_long_description,A longer description of the company the business activities of the company.,API and Batch
+,Company Information - L1,Extracted Short Description,extracted_short_description,A short description of the business activities of the company,API and Batch
+,Company Information - L1,Main City,main_city,The city in which the company's HQ is located,API and Batch
+,Company Information - L1,Main Country,main_country,The country in which the company's HQ is located,API and Batch
+,Company Information - L1,Main Country Code,main_country_code,2-letter ISO code of the country in which the company's HQ is located,API and Batch
+,Company Information - L1,Main Latitude,main_latitude,The latitude coordinates associated with the company's HQ,API and Batch
+,Company Information - L1,Main Longitude,main_longitude,The longitude coordinates associated with the company's HQ,API and Batch
+,Company Information - L1,Main Postcode,main_postcode,The street in which the company's HQ is located,API and Batch
+,Company Information - L1,Main Region,main_region,The region in which the company's HQ is located,API and Batch
+,Company Information - L1,Main Street,main_street,The street in which the company's HQ is located,API and Batch
+,Company Information - L1,Main Street Number,main_street_number,The city in which the company's HQ is located,API and Batch
+,Company Information - L1,Main Business Category,main_business_category,Primary Industry of activity for the company,API and Batch
+,Company Information - L1,Main Industry,main_industry,Primary Industry of activity for the company,API and Batch
+,Company Information - L1,Main Sector,main_sector,The main sector of activity of the business based on Veridion's ML classification model,API and Batch
+,Company Information - L1,Website Domain,website_domain,The domain name of the main company website,API and Batch
+,Company Information - L1,Website Language Code,website_language_code,Main language identified on the company website,API and Batch
+,Company Information - L1,Website TLD,website_tld,Top-level-domain of the company domain,API and Batch
+,Company Information - L1,Website URL,website_url,URL of the main company website,API and Batch
+,Company Information - L2,Number of Locations,number_of_locations,"Number of physical locations (holding an address) identified for the company. Includes offices, retail locations, manufacturing plants and other types of locations. 
+  
+  This number may or may not be the same as Number of Offices, depending on the company""",API and Batch
+,Company Information - L2,All Locations,all_locations,"Country, Region and City of all the known company locations. (Provide up to 10 locations)",API and Batch
+,Company Information - L2,Year Founded,year_founded,"The year when the company was founded. If the company is part of a larger or older organization, the founding year is considered the one of the parent organization.",API and Batch
+,Company Information - L2,Business Tags,business_tags,"Tag 1, Tag 2, Tag 3 are company attributes, related to the company's activities. For example, a tech company may contain tags such as """"startup"""", """"SaaS"""", """"Artificial Intelligence"""". A company may have up to 3 associated tags, depending on their online presence.",API and Batch
+,Company Information - L2,Primary Phone,primary_phone,"Primary phone number associated with the company. This will usually be front office phone numbers or department level phone numbers, listed in public places such as the company's website.",API and Batch
+,Company Information - L2,Phone Numbers,phone_numbers,Other phone numbers associated with the company. These will usually be front office phone numbers or department level phone numbers,API and Batch
+,Company Information - L2,Primary Email,primary_email,"Company generic emails such as info@, contact@, linked to the company domain.",API and Batch
+,Company Information - L2,Emails,emails,"The main generic email (such as info@, contact@) linked to the company's domain.",API and Batch
+,Company Information - L2,Other Emails,other_emails,Other company emails without generic names linked to the company domain.,API and Batch
+,Company Information - L3,Employee Count,employee_count,Number of people employed by the company,API and Batch
+,Company Information - L3,Estimated Revenue,estimated_revenue,"Company yearly revenue. For companies that publish their revenue numbers (e.g. public companies, Inc 5000 companies etc.), the value is official, and for companies that don't, the value is estimated.",API and Batch
+,Company Information - L4,Generated Company Description,generated_company_description,Proprietary Large Language Model that generates descriptions of the company,Batch
+,Company Information - L4,Generated Business Tags,generated_business_tags,Proprietary Large Language Model generates company's activities of the company based on its business model.,Batch
+,Industry Classifications,NAICS 2022 Primary Code,naics_2022_primary_code,"Classification of the company's main business activity, in the North American Industry Classification System (NAICS) taxonomy, with a 6-digit granularity.",API and Batch
+,Industry Classifications,NAICS 2022 Primary Label,naics_2022_primary_label,"Classification of the company's main business activity, in the North American Industry Classification System (NAICS) taxonomy, with a 6-digit granularity.",API and Batch
+,Industry Classifications,NAICS 2022 Secondary Codes,naics_2022_secondary_codes,"Classification of the company's secondary business activities, in the North American Industry Classification System (NAICS) taxonomy, with a 6-digit granularity.",API and Batch
+,Industry Classifications,NAICS 2022 Secondary Labels,naics_2022_secondary_labels,"Classification of the company's secondary business activities, in the North American Industry Classification System (NAICS) taxonomy, with a 6-digit granularity.",API and Batch
+,Industry Classifications,Primary NAICS Snippet,primary_naics_snippets,Provides evidence to support the machine learning models decision to predict the primary NAICS Code,Batch
+,Industry Classifications,Secondary NAICS Snippet,secondary_naics_snippets,Provides evidence to support the machine learning models decision to predict the secondary NAICS Code,Batch
+,Industry Classifications,SIC Code,sic_code,"Classification of the company's main business activity, in the Standard Industrial Classification (SIC) taxonomy.",API and Batch
+,Industry Classifications,SIC Label,sic_label,"Classification of the company's main business activity, in the Standard Industrial Classification (SIC) taxonomy.",API and Batch
+,Industry Classifications,ISIC 4 Code,isic_4_code,"Classification of the company's secondary business activities, in the International Standard Industrial Classification (ISIC) taxonomy.",API and Batch
+,Industry Classifications,ISIC 4 Label,isic_4_label,"Classification of the company's secondary business activities, in the International Standard Industrial Classification (ISIC) taxonomy.",API and Batch
+,Industry Classifications,NACE Rev2 Code,nace_rev2_code,"Classification of the company's secondary business activities, in the Nomenclature of Economic Activities (NACE) taxonomy, used throughout the European Union.",API and Batch
+,Industry Classifications,NACE Rev2 Label,nace_rev2_label,"Classification of the company's secondary business activities, in the Nomenclature of Economic Activities (NACE) taxonomy, used throughout the European Union.",API and Batch
+,Insurance Classifications,NCCI Code,ncci_code,"NCCI Code, short for National Council on Compensation Insurance Code, is a standardized classification system used in the United States to categorize and classify various types of businesses and industries for workers' compensation insurance purposes.",API and Batch
+,Insurance Classifications,IBC Insurance Labels,ibc_insurance_labels,"Classification of the company's main business activity, in the IBC, insurance business classification taxonomy.",API and Batch
+,Insurance Classifications,IBC Insurance Codes,ibc_insurance_codes,"Classification of the company's main business activity, in the IBC, insurance business classification taxonomy.",API and Batch
+,Digital Presence,Facebook URL,facebook_url,The company's Facebook URL,API and Batch
+,Digital Presence,Twitter URL,twitter_url,The company's Twitter URL,API and Batch
+,Digital Presence,Instagram URL,instagram_url,The company's Instagram URL,API and Batch
+,Digital Presence,LinkedIn URL,linkedin_url,The company's LinkedIn URL,API and Batch
+,Digital Presence,iOS App URL,ios_app_url,iOS App Store URL,API and Batch
+,Digital Presence,Android App URL,android_app_url,Google Play Store URL,API and Batch
+,Digital Presence,YouTube URL,youtube_url,Company's Youtube channel.,API and Batch
+,Digital Presence,TikTok URL,tiktok_url,Company's Tiktok page.,Batch
+,Technology Insights,Technologies,technologies,"Types of web technologies that are used by the company website and public assets such as: Content Management System, Programming Language, Other web components",API and Batch
+,Registry Information,Registered Name,registred_name,Company legal name as provided by the local registry that the company incorporated with,Batch
+,Registry Information,Registered Country Code,registered_country_code,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Country,registered_country,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Region,registered_region,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered City,registered_city,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Postcode,registered_postcode,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Street,registered_street,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Street Number,registered_street_number,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Latitude,registered_latitude,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Longitude,registered_longitude,"Legal address of registration, as provided by the registry with which this company incorporated. The legal address might differ from the operational (office) address of the company.",Batch
+,Registry Information,Registered Primary Phone,registered_primary_phone,Phone number provided to the registry when incorporating.,Batch
+,Registry Information,Jurisdiction,jurisdiction,"The jurisdiction where this company incorporated. In most territories it's the country, but in others it's the region (e.g. in Switzerland) or the state (e.g. in the United States).",Batch
+,Registry Information,Legal Form,legal_form,"The legal form of the company (e.g. ""Limited Liability Company"")",Batch
+,Registry Information,Company Status,company_status,The company's status as provided by the registry (Active / Inactive),Batch
+,Registry Information,Year Incorporated,year_incorporated,The year in which the legal entity was first incorporated.,Batch
+,Registry Information,Date Incorporated,date_incorporated,The exact date of incorporation for the legal entity.,Batch
+,Registry Information,LEI,lei,"The ID of the company, if the company registered for a Legal Entity Identifier (LEI)",Batch
+,Registry Information,EIN,ein,"US Employer Identification Number, if the company registered for an EIN.",Batch
+,Registry Information,VAT ID,vat_id,"Value Added Tax ID, in countries and territories that require a VAT ID (especially countries in Europe).",Batch
+,Registry Information,Registry ID,registry_id,Local Unique ID as provided by the local registry where this legal entity is incorporated.,Batch
+,Product & Services L1,Root Domain,root_domain,"The primary domain name of the website, such as ""3m.com.""",Batch
+,Product & Services L1,Company ID,Company_id,A unique identifier assigned to the company for tracking and differentiation purposes.,Batch
+,Product & Services L1,Page Breadcrumbs,page_breadcrumbs,Navigational aid showing the hierarchical path of pages leading to the current page on the website.,Batch
+,Product & Services L1,H1,h1,"The main heading or title of a webpage, prominently indicating its content.",Batch
+,Product & Services L1,Meta Title,meta_title,"A concise and descriptive title for a webpage, visible in search engine results and browser tabs.",Batch
+,Product & Services L1,URL,url,The specific web address redirecting to the page's location on the website.,Batch
+,Product & Services L1,Name,name,"The name of the product, in this case, ""Cutter Stand.""",Batch
+,Product & Services L1,Product Description,product_description,"A focused and detailed description of the product's attributes, benefits, and how it meets specific needs.",Batch
+,Product & Services L2,UNSPSC Class Name,unspsc_class_name,"The name of a category in the United Nations Standard Products and Services Code (UNSPSC) classification system, organizing products and services for procurement and supply chain purposes.",Batch
+,Product & Services L2,UNSPSC Class,unspsc_class,The numeric code corresponding to a specific class category in the UNSPSC classification system.,Batch
+,Product & Services L2,UNSPSC Family Name,unspsc_family_name,The name of a broader family category within the UNSPSC classification system.,Batch
+,Product & Services L2,UNSPSC Family,unspsc_family,The numeric code associated with a specific family category in the UNSPSC classification system.,Batch
+,Product & Services L2,UNSPSC Segment Name,unspsc_segment_name,The name of an even broader segment category within the UNSPSC classification system.,Batch
+,Product & Services L2,UNSPSC Segment,unspsc_segment,The numeric code associated with a specific segment category in the UNSPSC classification system.,Batch
+,Locations,Company ID,veridion_id,Company internal ID to Veridion,Batch
+,Locations,Company Name,company_name,The name of the company,Batch
+,Locations,Country Code,country_code,2-letter ISO code of the country,Batch
+,Locations,Country,country,The country name associated with the location,Batch
+,Locations,Region Code,region_code,The region code associated with the location,Batch
+,Locations,Region,region,The region name associated with the location,Batch
+,Locations,City,city,The city associated with the location,Batch
+,Locations,Street,street,The street name associated with the location,Batch
+,Locations,Street Number,street_number,The street number associated with the location,Batch
+,Locations,Postcode,postcode,The postal code associated with the location,Batch
+,Locations,Latittude,latittude,The latitude coordinates associated with the location,Batch
+,Locations,Logitude,longitude,The longitude coordinates associated with the location,Batch
+,Sustainability Commitements,Company ID,veridion_id,Company internal ID to Veridion,Batch
+,Sustainability Commitements,Company Name,company_name,"Most commonly used name when referring to this entity. This name can be the legal name, or it can be the commercial name. In some cases, the commercial name is an abbreviation of the company name.",Batch
+,Sustainability Commitements,Content Type,esg_content_type,"Content type refers to the format or medium of the content being analyzed for sustainability topics. It categorizes content into different forms, such as news or commitments",Batch
+,Sustainability Commitements,Content headline,esg_content_headline,ESG content headline is the title or heading of the ESG-related content piece. It serves as a brief summary of the primary topic or focus of the content,Batch
+,Sustainability Commitements,Content Relevant Text,esg_content_relevant_text,"ESG content relevant text comprises the main body of the content, including all pertinent information, data, analysis, and insights related to environmental, social, and governance aspects.",Batch
+,Sustainability Commitements,Content Source URL,esg_content_source_url,The ESG content source URL is the web link or URL that directs readers to the original source of the ESG content. ,Batch
+,Sustainability Commitements,Content Pillar,esg_content_pillar,"ESG content pillar refers to one of the core areas within the broader ESG framework. These pillars typically include Environmental, Social, and Governance considerations. ",Batch
+,Sustainability Commitements,Content Theme,esg_content_theme,ESG content theme represents the overarching idea or message that ties the ESG content together.,Batch
+,Sustainability Commitements,Content Risk Criteria,esg_content_risk_criteria,ESG content risk criteria are the specific factors or elements that are evaluated to assess the potential risks associated with the ESG content.,Batch
+,Sustainability News,Company ID,veridion_id,Company internal ID to Veridion,Batch
+,Sustainability News,Company Name,company_name,"Most commonly used name when referring to this entity. This name can be the legal name, or it can be the commercial name. In some cases, the commercial name is an abbreviation of the company name.",Batch
+,Sustainability News,Content Type,esg_content_type,"Content type refers to the format or medium of the content being analyzed for sustainability topics. It categorizes content into different forms, such as news or commitments",Batch
+,Sustainability News,Content headline,esg_content_headline,ESG content headline is the title or heading of the ESG-related content piece. It serves as a brief summary of the primary topic or focus of the content,Batch
+,Sustainability News,Content Relevant Text,esg_content_relevant_text,"ESG content relevant text comprises the main body of the content, including all pertinent information, data, analysis, and insights related to environmental, social, and governance aspects.",Batch
+,Sustainability News,Content Source URL,esg_content_source_url,The ESG content source URL is the web link or URL that directs readers to the original source of the ESG content. ,Batch
+,Sustainability News,Content Pillar,esg_content_pillar,"ESG content pillar refers to one of the core areas within the broader ESG framework. These pillars typically include Environmental, Social, and Governance considerations. ",Batch
+,Sustainability News,Content Theme,esg_content_theme,ESG content theme represents the overarching idea or message that ties the ESG content together.,Batch
+,Sustainability News,Content Risk Criteria,esg_content_risk_criteria,ESG content risk criteria are the specific factors or elements that are evaluated to assess the potential risks associated with the ESG content.,Batch
+,Sustainability News,Content Sentiment Value,esg_content_sentiment_value,"ESG content sentiment value is a measure of the emotional tone or sentiment conveyed by the ESG content. It can range from positive to negative, or neutral.",Batch
+,Sustainability News,Content Confidence Value,esg_content_sentiment_confidence,ESG content confidence value indicates the level of certainty or confidence in the accuracy and reliability of the Sentiment value.,Batch
+,Sustainability News,Content Publish Data,esg_content_publish_date,ESG content publish date is the date when the ESG-related content was initially made available to the public or stakeholders. ,Batch
